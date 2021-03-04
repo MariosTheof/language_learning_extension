@@ -1,0 +1,87 @@
+*{
+    transition: all 0.6s;
+}
+
+html {
+    height: 100%;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    color: rgba(0,0,0,0.7);
+    background: #6D6475;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(to bottom, #0A1A29, #6D6475, #C69E92);
+    margin: 0;
+}
+
+#popup{
+    position: absolute;
+    max-width: 350px;
+    width: auto;
+    padding: 20px;
+    background: #ddd;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0px 0px 35px rgba(0,0,0,0.6);
+}
+
+#popup p{
+    font-weight: 300;
+}
+
+input[type='email']{
+    outline: none;
+    display: inline-block;
+    width: 65%;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+input[type='email']:focus{
+    border: 2px solid #aaa;
+}
+
+#button{
+    color: rgba(0,0,0,0.6);
+    text-decoration: none;
+    border-radius: 5px;
+    width: 27%;
+    display: inline-block;
+    padding: 8px;
+    background: #fff;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+#button:hover{
+    border: 2px solid #aaa;
+}
+
+@media screen and (max-width: 736px){
+    input[type='email']{
+        display: block;
+        width: 100%;
+    }
+    #button{
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        width: 100%;
+        display: block;
+        margin-top: 5px;
+    }
+}

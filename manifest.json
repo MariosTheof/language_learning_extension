@@ -1,15 +1,22 @@
 {
 
   "manifest_version": 2,
-  "name": "Borderify",
+  "name": "Learnl",
   "version": "1.1",
 
-  "description": "Adds a red border to all webpages matching mozilla.org.",
+  "description": "Displays pop up after interval with grammar questions.",
 
   "background": {
     "scripts": ["popup.js"]
   },
   "permissions" : [
-    "storage"
-  ]
+    "storage",
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/beasts-32.png",
+    "default_title": "Learnl",
+    "default_popup": "settings.html"
+  }
 }

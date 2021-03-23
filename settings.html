@@ -3,20 +3,55 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="popup.css"/>
+    <link rel="stylesheet" href="settings.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
   </head>
 
 <body>
-  <div id="popup-content">
-    <div class="button beast">Frog</div>
-    <div class="button beast">Turtle</div>
-    <div class="button beast">Snake</div>
-    <div class="button reset">Reset</div>
-  </div>
-  <div id="error-content" class="hidden">
-    <p>Can't beastify this web page.</p><p>Try a different page.</p>
-  </div>
-  <!-- <script src="choose_beast.js"></script> -->
-</body>
 
+  <div class="widget">
+    <div class="widget-tabs">
+      <img src="translation.png" style="width:30px;height:30px">
+      <img src="settings_cog.png" class="btn">
+    </div>
+
+    <div class="home-panel active">
+      <br><br>
+      <h3> You are currently learning </h3>
+      <img src=spain.svg style="width:40px;height:40px">
+      <h3> Spanish </h3>
+      <p>You have learned 0/1000 words so far</p>
+    </div>
+
+
+
+      <ol class="settings-panel" id="developers">
+      <li>
+        <a class="widget-list-link">
+          <img src="http://www.gravatar.com/avatar/6?f=y&amp;s=64&amp;d=identicon">
+          Developer #1 <span>481 followers</span>
+        </a>
+      </li>
+      <li>
+        <a class="widget-list-link">
+          <img src="http://www.gravatar.com/avatar/6?f=y&amp;s=64&amp;d=identicon">
+          Developer #2 <span>5162 followers</span>
+        </a>
+      </li>
+      <li>
+        <a class="widget-list-link">
+          <img src="http://www.gravatar.com/avatar/6?f=y&amp;s=64&amp;d=identicon">
+          Developer #3 <span>342 followers</span>
+        </a>
+      </li>
+    </ol>
+
+
+
+
+  </div>
+
+  <script src="settings.js"></script>
+</body>
+<!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 </html>

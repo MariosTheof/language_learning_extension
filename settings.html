@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="settings.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
   </head>
 
@@ -12,44 +13,82 @@
   <div class="widget">
     <div class="widget-tabs">
       <img src="translation.png" style="width:30px;height:30px">
-      <img src="settings_cog.png" class="btn">
+      <img src="settings_cog.png" class="btn" id="btn">
     </div>
 
     <div class="home-panel active">
       <br><br>
-      <h3> You are currently learning </h3>
+      <!-- if (languageSelected()) -->
+      <!-- <h3> You are currently learning </h3>
       <img src=spain.svg style="width:40px;height:40px">
       <h3> Spanish </h3>
-      <p>You have learned 0/1000 words so far</p>
+      <p>You have learned 0/1000 words so far</p> -->
+      <!-- else -->
+      <h3>No languages selected yet!</h3>
+      Click below to pick one and start learning
+      <br>
+      <a href="#demo-modal"><img src="add.png" style="width:35px;"></a>
+      <br>
     </div>
 
 
 
-      <ol class="settings-panel" id="developers">
-      <li>
-        <a class="widget-list-link">
-          <img src="http://www.gravatar.com/avatar/6?f=y&amp;s=64&amp;d=identicon">
-          Developer #1 <span>481 followers</span>
-        </a>
-      </li>
-      <li>
-        <a class="widget-list-link">
-          <img src="http://www.gravatar.com/avatar/6?f=y&amp;s=64&amp;d=identicon">
-          Developer #2 <span>5162 followers</span>
-        </a>
-      </li>
-      <li>
-        <a class="widget-list-link">
-          <img src="http://www.gravatar.com/avatar/6?f=y&amp;s=64&amp;d=identicon">
-          Developer #3 <span>342 followers</span>
-        </a>
-      </li>
-    </ol>
-
-
-
-
+      <div class="settings-panel">
+          <br><br>
+          <p><img class="btn" id="back-btn" src="back.png" style="width:10px;">
+            <br>
+            Target language :
+            <select name="language-select" id="language-select">
+              <option value="spanish">Spanish</option>
+              <option value="french">French</option>
+              <option value="new">Add new</option>
+            </select>
+          </p>
+          <p>Show popup every
+            <input type="number" id="popup-inverval" name="popup-inverval"
+                   min="10" max="60" style="width:38px;">
+          minutes</p>
+          <p style="text-align:center">
+            <!-- add bootstrap green to button -->
+            <button class="btn-1">Save</button>
+          </p>
+      </div>
   </div>
+
+
+  <div id="demo-modal" class="modal" style="text-align:center">
+      <div class="modal__content">
+          <h1>Pick your poison!</h1>
+
+          <div class="wrapper">
+            <div class="box a">
+              <img src="spain.svg">
+              Spanish
+            </div>
+            <div class="box b">
+              <img src="france.svg">
+              French
+            </div>
+            <div class="box c">
+              <img src="poland.svg">
+              Polish
+            </div>
+            <div class="box d">D</div>
+            <div class="box e">E</div>
+            <div class="box f">F</div>
+          </div>
+          <br>
+          <button class="btn-1">Save</button>
+
+          <div class="modal__footer">
+              <!-- Made with <i class="fa fa-heart"></i>, by <a href="https://twitter.com/denicmarko" target="_blank">@denicmarko</a> -->
+          </div>
+
+          <a href="#" class="modal__close">&times;</a>
+      </div>
+  </div>
+
+
 
   <script src="settings.js"></script>
 </body>

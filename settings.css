@@ -158,7 +158,7 @@ body {
 }
 
 .wrapper {
-  display: grid;
+  display: inline-grid;
   grid-template-columns: 100px 100px 100px;
   grid-gap: 10px;
   background-color: #fff;
@@ -175,4 +175,8 @@ body {
 .box:hover {
   -webkit-animation: jello 1s;
   animation: jello 1s;
+}
+
+.selected {
+  background-color: #4BB543;
 }

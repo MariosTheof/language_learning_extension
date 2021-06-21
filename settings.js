@@ -1,12 +1,12 @@
 $(".btn").click(
   function() {
-    // $('.active').fadeOut('slow', function() {
-      if ( $(".home-panel").hasClass("active") ) {
-        $(".settings-panel").addClass("active");
-        $(".home-panel").removeClass("active");
-      } else {
-        $(".settings-panel").removeClass("active");
-        $(".home-panel").addClass("active");
-      }
-    // })
+    $(".home-panel").toggleClass( "active" );
+    $(".settings-panel").toggleClass( "active" );
   });
+
+
+var boxes = $('div.box');
+boxes.click(function() {
+    boxes.removeClass('selected');
+    $(this).addClass("selected");
+});

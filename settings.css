@@ -176,3 +176,6 @@ body {
   -webkit-animation: jello 1s;
   animation: jello 1s;
 }
+.box.active {
+  background-color: #28a745; 
+}
